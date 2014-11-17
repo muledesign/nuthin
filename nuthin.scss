@@ -1,0 +1,109 @@
+// OPTIONS
+// -------
+
+// Set to true to declare `box-sizing: border-box` on all block elements
+$border-box: true;
+// List of block elements
+$block-elements: "address, article, aside, audio, blockquote, canvas, dd, div, dl, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, noscript, ol, output, p, pre, section, table, tfoot, ul, video";
+
+// TOP-LEVEL
+// ---------
+
+// Nice text rendering and sizing
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+// BLOCK ELEMENTS
+// --------------
+
+// No default margins or paddings
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+// Make sure newer block elements always work, even in IE
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+// Set up sane box-sizing
+@if $border-box {
+  #{$block-elements} {
+    box-sizing: border-box;
+  }
+}
+
+// TEXT AND IMAGE RULES
+// --------------------
+
+// No heading styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+// No more ugly default links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Automatically size images nicely
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+// FORMS
+// -----
+
+// Correct defaults and some inheritance issues
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
