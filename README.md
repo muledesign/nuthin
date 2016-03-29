@@ -9,3 +9,6 @@ The Sass version, which includes an option to disable `box-sizing:border-box` on
 
 ## nuthin.css
 A compiled version that's washed-and-ready for consumption. Note: this has `box-sizing:border-box` turned on for block level elements.
+
+## nuthin.min.css
+The compiled, then minified version. Note: this has `box-sizing:border-box` turned on for block level elements.
