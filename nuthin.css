@@ -1,3 +1,6 @@
+/*TOP-LEVEL*/
+
+/*Nice text rendering and sizing*/
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,6 +13,14 @@ body {
   font-size: 16px;
 }
 
+/*Set up sane box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+/*BLOCK ELEMENTS*/
+
+/*No default margins or paddings*/
 h1,
 h2,
 h3,
@@ -18,15 +29,15 @@ p,
 blockquote,
 figure,
 ol,
-ul {
+ul,
+menu,
+dl,
+dd {
   margin: 0;
   padding: 0;
 }
 
-li {
-  display: block;
-}
-
+/*Make sure newer block elements always work, even in IE*/
 article,
 aside,
 details,
@@ -43,10 +54,9 @@ summary {
   display: block;
 }
 
-address, article, aside, audio, blockquote, canvas, dd, div, dl, fieldset, figcaption, figure, footer, form, input, h1, h2, h3, h4, h5, h6, header, hgroup, hr, noscript, ol, output, p, pre, section, table, tfoot, ul, li, video {
-  box-sizing: border-box;
-}
+/*TEXT AND IMAGE RULES*/
 
+/*No heading styles*/
 h1,
 h2,
 h3,
@@ -57,17 +67,29 @@ h6 {
   font-weight: normal;
 }
 
+/*No more ugly default links*/
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/*Automatically size images nicely*/
 img {
-  max-width: 100%;
   height: auto;
   border: 0;
 }
 
+cite {
+  font-style: normal;
+}
+
+dl {
+  list-style-type: none;
+}
+
+/*FORMS*/
+
+/*Correct defaults and some inheritance issues*/
 button,
 input,
 optgroup,
@@ -76,17 +98,36 @@ textarea {
   color: inherit;
   font: inherit;
   margin: 0;
+  padding: 0;
+  outline: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
 }
 
-button,
-input[type='button'],
-input[type='submit'],
-input[type='image'] {
-  outline: none;
-  border: none;
+input[type="checkbox"] {
+  appearance: checkbox;
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  -o-appearance: checkbox;
 }
+
+input[type="radio"] {
+  appearance: radio;
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  -o-appearance: radio;
+}
+
+/*TABLE*/
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+td, th {
+  text-align: left;
+  font-weight: normal;
 }
