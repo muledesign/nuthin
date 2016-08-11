@@ -8,7 +8,7 @@ gulp.task('minify-css', function() {
     .pipe(rename(function (path) {
       path.extname = ".min.css"
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('default', ['minify-css']);
