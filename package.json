@@ -1,0 +1,29 @@
+{
+  "name": "nuthin",
+  "version": "1.0.0",
+  "description": "A CSS reset that's nice 'n' concise",
+  "main": "nuthin.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp minify-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muledesign/nuthin.git"
+  },
+  "keywords": [
+    "css",
+    "reset"
+  ],
+  "author": "Mule Design (Liam Campbell + Steph Monette)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muledesign/nuthin/issues"
+  },
+  "homepage": "https://github.com/muledesign/nuthin#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-rename": "^1.2.2"
+  }
+}
