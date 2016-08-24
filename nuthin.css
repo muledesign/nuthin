@@ -21,18 +21,41 @@ body {
 /*BLOCK ELEMENTS*/
 
 /*No default margins or paddings*/
+address,
+article,
+aside,
+blockquote,
+canvas,
+dd,
+div,
+dl,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
-p,
-blockquote,
-figure,
+h5,
+h6,
+header,
+hgroup,
+hr,
+li,
+main,
+nav,
+noscript,
 ol,
+output,
+p,
+pre,
+section,
+table,
+tfoot,
 ul,
-menu,
-dl,
-dd {
+video {
   margin: 0;
   padding: 0;
 }
@@ -94,6 +117,8 @@ button,
 input,
 optgroup,
 select,
+progress,
+meter,
 textarea {
   color: inherit;
   font: inherit;
